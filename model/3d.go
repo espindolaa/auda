@@ -40,6 +40,13 @@ func NewContainer(dimensions box, position Point) Container {
 	return Container{dimensions, position, []Item{}, &ByColumn{}, Utilization{}}
 }
 
+func (c *Container) Sort(pool *Pool, channel chan Utilization) {
+	c.PickItems(pool)
+	c.ArrangeItems()
+
+	channel <- c.Sorted
+}
+
 func (c *Container) BreakSpace(full Container) []Container {
 	spaces := c.breakingStrategy.Break(*c)
 

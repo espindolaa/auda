@@ -2,7 +2,7 @@ package auda
 
 import "tcc/model"
 
-func validateSolution(containers []model.Container) bool {
+func isValidSolution(containers []model.Container) bool {
 	fullSpace := model.Utilization{}
 	for _, c := range containers {
 		if !fullSpace.Append(c.Sorted) {
@@ -11,6 +11,10 @@ func validateSolution(containers []model.Container) bool {
 	}
 
 	return true
+}
+
+func waitForCompletion() {
+
 }
 
 func main() {
@@ -22,14 +26,15 @@ func main() {
 
 	containers := container.BreakSpace(container) // serial
 
-	// here ends the serial section, from now own everything can be in parallel, besides the last segment
+	channel := make(chan model.Utilization)
 
 	for _, c := range containers {
-		go c.PickItems(pool)
-		go c.ArrangeItems()
+		go c.Sort(pool, channel)
 	}
 
-	// last segment
+	waitForCompletion(channel)
 
-	validateSolution(containers)
+	if isValidSolution(containers) {
+		return
+	}
 }
