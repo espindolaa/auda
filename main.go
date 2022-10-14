@@ -1,6 +1,8 @@
 package auda
 
-import "tcc/model"
+import (
+	"tcc/model"
+)
 
 func isValidSolution(containers []model.Container) bool {
 	fullSpace := model.Utilization{}
@@ -13,8 +15,20 @@ func isValidSolution(containers []model.Container) bool {
 	return true
 }
 
-func waitForCompletion() {
+func waitForCompletion(ch chan model.Utilization, numberOfContainers int) []model.Utilization {
+	utilizations := []model.Utilization{}
 
+	for {
+		v := <-ch
+		utilizations = append(utilizations, v)
+
+		if len(utilizations) == numberOfContainers {
+			break
+		}
+
+	}
+
+	return utilizations
 }
 
 func main() {
@@ -32,7 +46,7 @@ func main() {
 		go c.Sort(pool, channel)
 	}
 
-	waitForCompletion(channel)
+	waitForCompletion(channel, len(containers))
 
 	if isValidSolution(containers) {
 		return
