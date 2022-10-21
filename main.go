@@ -31,11 +31,7 @@ func waitForCompletion(ch chan model.Utilization, numberOfContainers int) []mode
 	return utilizations
 }
 
-func main() {
-	// todo: move to cmd input
-	container := model.NewContainer(model.NewBox(10, 10, 10), model.Point{X: 0, Y: 0, Z: 0})
-
-	items := []model.Item{model.NewItem(2, 5, 4), model.NewItem(2, 5, 4), model.NewItem(2, 5, 4), model.NewItem(2, 5, 4)}
+func core(container model.Container, items []model.Item) (bool, []model.Utilization) {
 	pool := model.NewPool(items)
 
 	containers := container.BreakSpace(container) // serial
@@ -46,9 +42,11 @@ func main() {
 		go c.Sort(pool, channel)
 	}
 
-	waitForCompletion(channel, len(containers))
+	solution := waitForCompletion(channel, len(containers))
 
 	if isValidSolution(containers) {
-		return
+		return false, nil
 	}
+
+	return true, solution
 }
