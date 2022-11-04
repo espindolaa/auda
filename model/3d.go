@@ -1,61 +1,68 @@
 package model
 
 type Point struct {
-	X int
-	Y int
-	Z int
+	X float64
+	Y float64
+	Z float64
 }
 
 type box struct {
-	Width  int
-	Length int
-	Height int
+	Width  float64
+	Length float64
+	Height float64
 }
 
-func NewBox(width, length, height int) box {
+func NewBox(width, length, height float64) box {
 	return box{Width: width, Length: length, Height: height}
 }
 
-func (b box) Volume() int {
+func (b box) Volume() float64 {
 	return b.Height * b.Width * b.Length
 }
 
 type Item struct {
 	box
+	Weight float64
+	Label  string
 }
 
-func NewItem(width, length, height int) Item {
-	return Item{box{Width: width, Length: length, Height: height}}
+func NewItem(label string, width, length, height, weight float64) Item {
+	return Item{box: box{Width: width, Length: length, Height: height}, Weight: weight, Label: label}
 }
 
 type Container struct {
 	box
-	LeftBottomPoint  Point
+	MaxWeight        float64
+	LeftBottomCorner Point
 	unsortedItems    []Item
 	breakingStrategy BreakingStrategy
+	packingAlgorithm PackingAdapter
 	Sorted           Utilization
 }
 
-func NewContainer(dimensions box, position Point) Container {
-	return Container{dimensions, position, []Item{}, &ByColumn{}, Utilization{}}
+func NewContainer(dimensions box, maxWeight float64, position Point, packingAlgorithm PackingAdapter) Container {
+	return Container{dimensions, maxWeight, position, []Item{}, &ByColumn{}, packingAlgorithm, Utilization{}}
 }
 
-func (c *Container) Sort(pool *Pool, channel chan Utilization) {
+func (c Container) Sort(pool *Pool, channel chan Utilization) {
 	c.PickItems(pool)
-	c.ArrangeItems()
+	c.Sorted = c.packingAlgorithm.Pack(c)
 
 	channel <- c.Sorted
 }
 
-func (c *Container) BreakSpace(full Container) []Container {
-	spaces := c.breakingStrategy.Break(*c)
+func BreakSpace(spaces []Container, numberOfItems int) []Container {
+	if numberOfItems > 25 { // magic number
+		// call another break
+		numberOfItems = numberOfItems / 2
+		brokenSpaces := []Container{}
 
-	for _, space := range spaces {
-		if space.Volume() > 300 { // extract magic number
-			broken := space.BreakSpace(space)
-			spaces = spaces[1:]
-			spaces = append(spaces, broken...)
+		for _, s := range spaces {
+			broken := s.breakingStrategy.Break(s)
+			brokenSpaces = append(brokenSpaces, broken...)
 		}
+
+		return BreakSpace(brokenSpaces, numberOfItems)
 	}
 
 	return spaces
@@ -73,39 +80,35 @@ func (c *Container) PickItems(pool *Pool) {
 	}
 }
 
-func (c *Container) ArrangeItems() {
-	// todo: call the packing algorithm using c.unsortedItems
-	c.Sorted = Utilization{}
-}
-
 type Utilization struct {
-	Volume    int
+	Volume    float64
 	Allocated []Position
 	Unused    []Item
 }
 
-func (u *Utilization) Append(ut Utilization) bool { // o (n*m)
-	for _, a := range u.Allocated {
-		for _, al := range ut.Allocated {
-			if conflict(a, al) {
-				return false
-			}
-		}
-	}
+func (u *Utilization) Add(position Position) {
+	u.Allocated = append(u.Allocated, position)
+	u.Volume += position.Item.box.Volume()
+}
 
+func (u *Utilization) AddUnused(item Item) {
+	u.Unused = append(u.Unused, item)
+}
+
+func (u *Utilization) Append(ut Utilization) {
 	u.Unused = append(u.Unused, ut.Unused...)
 	u.Allocated = append(u.Allocated, ut.Allocated...)
 	u.Volume += ut.Volume
-
-	return true
-}
-
-func conflict(first, second Position) bool {
-	// todo: guarantee that the two boxes don't overlap (1D cut)
-	return false
 }
 
 type Position struct {
-	item             Item
-	leftBottomCorner Point
+	Item             Item
+	LeftBottomCorner Point
+}
+
+func NewPosition(item Item, leftBottomCorner Point) Position {
+	return Position{
+		Item:             item,
+		LeftBottomCorner: leftBottomCorner,
+	}
 }

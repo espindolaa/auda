@@ -1,0 +1,2364 @@
+{
+ "Boxes": {
+  "Volume": 14364000,
+  "Allocated": [
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 4"
+    },
+    "LeftBottomCorner": {
+     "X": 0,
+     "Y": 915,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 10"
+    },
+    "LeftBottomCorner": {
+     "X": 45,
+     "Y": 915,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 1"
+    },
+    "LeftBottomCorner": {
+     "X": 90,
+     "Y": 915,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 8"
+    },
+    "LeftBottomCorner": {
+     "X": 135,
+     "Y": 915,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 9"
+    },
+    "LeftBottomCorner": {
+     "X": 180,
+     "Y": 915,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 1"
+    },
+    "LeftBottomCorner": {
+     "X": 0,
+     "Y": 915,
+     "Z": 28
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 2"
+    },
+    "LeftBottomCorner": {
+     "X": 45,
+     "Y": 915,
+     "Z": 28
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 9"
+    },
+    "LeftBottomCorner": {
+     "X": 90,
+     "Y": 915,
+     "Z": 28
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 10"
+    },
+    "LeftBottomCorner": {
+     "X": 135,
+     "Y": 915,
+     "Z": 28
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 8"
+    },
+    "LeftBottomCorner": {
+     "X": 0,
+     "Y": 0,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 2"
+    },
+    "LeftBottomCorner": {
+     "X": 45,
+     "Y": 0,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 4"
+    },
+    "LeftBottomCorner": {
+     "X": 90,
+     "Y": 0,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 1"
+    },
+    "LeftBottomCorner": {
+     "X": 135,
+     "Y": 0,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 3"
+    },
+    "LeftBottomCorner": {
+     "X": 180,
+     "Y": 0,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 6"
+    },
+    "LeftBottomCorner": {
+     "X": 0,
+     "Y": 0,
+     "Z": 28
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 7"
+    },
+    "LeftBottomCorner": {
+     "X": 45,
+     "Y": 0,
+     "Z": 28
+    }
+   },
+   {
+    "Item": {
+     "Width": 60,
+     "Length": 70,
+     "Height": 180,
+     "Weight": 60,
+     "Label": "Geladeira 9"
+    },
+    "LeftBottomCorner": {
+     "X": 0,
+     "Y": 610,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 8"
+    },
+    "LeftBottomCorner": {
+     "X": 60,
+     "Y": 610,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 5"
+    },
+    "LeftBottomCorner": {
+     "X": 105,
+     "Y": 610,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 5"
+    },
+    "LeftBottomCorner": {
+     "X": 150,
+     "Y": 610,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 6"
+    },
+    "LeftBottomCorner": {
+     "X": 195,
+     "Y": 610,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 2"
+    },
+    "LeftBottomCorner": {
+     "X": 0,
+     "Y": 610,
+     "Z": 180
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 3"
+    },
+    "LeftBottomCorner": {
+     "X": 45,
+     "Y": 610,
+     "Z": 180
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 4"
+    },
+    "LeftBottomCorner": {
+     "X": 90,
+     "Y": 610,
+     "Z": 180
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 5"
+    },
+    "LeftBottomCorner": {
+     "X": 135,
+     "Y": 610,
+     "Z": 180
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 5"
+    },
+    "LeftBottomCorner": {
+     "X": 180,
+     "Y": 610,
+     "Z": 180
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 9"
+    },
+    "LeftBottomCorner": {
+     "X": 60,
+     "Y": 610,
+     "Z": 28
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 10"
+    },
+    "LeftBottomCorner": {
+     "X": 105,
+     "Y": 610,
+     "Z": 28
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 4"
+    },
+    "LeftBottomCorner": {
+     "X": 150,
+     "Y": 610,
+     "Z": 28
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 10"
+    },
+    "LeftBottomCorner": {
+     "X": 195,
+     "Y": 610,
+     "Z": 28
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 1"
+    },
+    "LeftBottomCorner": {
+     "X": 60,
+     "Y": 610,
+     "Z": 56
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 2"
+    },
+    "LeftBottomCorner": {
+     "X": 105,
+     "Y": 610,
+     "Z": 56
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 3"
+    },
+    "LeftBottomCorner": {
+     "X": 150,
+     "Y": 610,
+     "Z": 56
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 10"
+    },
+    "LeftBottomCorner": {
+     "X": 195,
+     "Y": 610,
+     "Z": 56
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 4"
+    },
+    "LeftBottomCorner": {
+     "X": 0,
+     "Y": 1068,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 5"
+    },
+    "LeftBottomCorner": {
+     "X": 45,
+     "Y": 1068,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 6"
+    },
+    "LeftBottomCorner": {
+     "X": 90,
+     "Y": 1068,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 7"
+    },
+    "LeftBottomCorner": {
+     "X": 135,
+     "Y": 1068,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 8"
+    },
+    "LeftBottomCorner": {
+     "X": 180,
+     "Y": 1068,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 9"
+    },
+    "LeftBottomCorner": {
+     "X": 0,
+     "Y": 1068,
+     "Z": 28
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 10"
+    },
+    "LeftBottomCorner": {
+     "X": 45,
+     "Y": 1068,
+     "Z": 28
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 1"
+    },
+    "LeftBottomCorner": {
+     "X": 90,
+     "Y": 1068,
+     "Z": 28
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 2"
+    },
+    "LeftBottomCorner": {
+     "X": 135,
+     "Y": 1068,
+     "Z": 28
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 3"
+    },
+    "LeftBottomCorner": {
+     "X": 180,
+     "Y": 1068,
+     "Z": 28
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 4"
+    },
+    "LeftBottomCorner": {
+     "X": 0,
+     "Y": 1068,
+     "Z": 56
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 5"
+    },
+    "LeftBottomCorner": {
+     "X": 45,
+     "Y": 1068,
+     "Z": 56
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 6"
+    },
+    "LeftBottomCorner": {
+     "X": 90,
+     "Y": 1068,
+     "Z": 56
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 7"
+    },
+    "LeftBottomCorner": {
+     "X": 135,
+     "Y": 1068,
+     "Z": 56
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 8"
+    },
+    "LeftBottomCorner": {
+     "X": 180,
+     "Y": 1068,
+     "Z": 56
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 9"
+    },
+    "LeftBottomCorner": {
+     "X": 0,
+     "Y": 1068,
+     "Z": 84
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 10"
+    },
+    "LeftBottomCorner": {
+     "X": 45,
+     "Y": 1068,
+     "Z": 84
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 1"
+    },
+    "LeftBottomCorner": {
+     "X": 90,
+     "Y": 1068,
+     "Z": 84
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 2"
+    },
+    "LeftBottomCorner": {
+     "X": 135,
+     "Y": 1068,
+     "Z": 84
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 7"
+    },
+    "LeftBottomCorner": {
+     "X": 180,
+     "Y": 1068,
+     "Z": 84
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 8"
+    },
+    "LeftBottomCorner": {
+     "X": 0,
+     "Y": 1068,
+     "Z": 112
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 1"
+    },
+    "LeftBottomCorner": {
+     "X": 45,
+     "Y": 1068,
+     "Z": 112
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 3"
+    },
+    "LeftBottomCorner": {
+     "X": 90,
+     "Y": 1068,
+     "Z": 112
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 5"
+    },
+    "LeftBottomCorner": {
+     "X": 135,
+     "Y": 1068,
+     "Z": 112
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 7"
+    },
+    "LeftBottomCorner": {
+     "X": 180,
+     "Y": 1068,
+     "Z": 112
+    }
+   },
+   {
+    "Item": {
+     "Width": 60,
+     "Length": 70,
+     "Height": 180,
+     "Weight": 60,
+     "Label": "Geladeira 1"
+    },
+    "LeftBottomCorner": {
+     "X": 0,
+     "Y": 458,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 60,
+     "Length": 70,
+     "Height": 180,
+     "Weight": 60,
+     "Label": "Geladeira 4"
+    },
+    "LeftBottomCorner": {
+     "X": 60,
+     "Y": 458,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 60,
+     "Length": 70,
+     "Height": 180,
+     "Weight": 60,
+     "Label": "Geladeira 8"
+    },
+    "LeftBottomCorner": {
+     "X": 120,
+     "Y": 458,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 7"
+    },
+    "LeftBottomCorner": {
+     "X": 180,
+     "Y": 458,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 2"
+    },
+    "LeftBottomCorner": {
+     "X": 0,
+     "Y": 458,
+     "Z": 180
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 1"
+    },
+    "LeftBottomCorner": {
+     "X": 45,
+     "Y": 458,
+     "Z": 180
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 6"
+    },
+    "LeftBottomCorner": {
+     "X": 90,
+     "Y": 458,
+     "Z": 180
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 7"
+    },
+    "LeftBottomCorner": {
+     "X": 135,
+     "Y": 458,
+     "Z": 180
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 8"
+    },
+    "LeftBottomCorner": {
+     "X": 180,
+     "Y": 458,
+     "Z": 180
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 6"
+    },
+    "LeftBottomCorner": {
+     "X": 180,
+     "Y": 458,
+     "Z": 28
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 7"
+    },
+    "LeftBottomCorner": {
+     "X": 180,
+     "Y": 458,
+     "Z": 56
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 8"
+    },
+    "LeftBottomCorner": {
+     "X": 180,
+     "Y": 458,
+     "Z": 84
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 9"
+    },
+    "LeftBottomCorner": {
+     "X": 180,
+     "Y": 458,
+     "Z": 112
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 10"
+    },
+    "LeftBottomCorner": {
+     "X": 180,
+     "Y": 458,
+     "Z": 140
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 1"
+    },
+    "LeftBottomCorner": {
+     "X": 0,
+     "Y": 528,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 2"
+    },
+    "LeftBottomCorner": {
+     "X": 45,
+     "Y": 528,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 3"
+    },
+    "LeftBottomCorner": {
+     "X": 90,
+     "Y": 528,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 4"
+    },
+    "LeftBottomCorner": {
+     "X": 135,
+     "Y": 528,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 7"
+    },
+    "LeftBottomCorner": {
+     "X": 180,
+     "Y": 528,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 9"
+    },
+    "LeftBottomCorner": {
+     "X": 0,
+     "Y": 528,
+     "Z": 28
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 1"
+    },
+    "LeftBottomCorner": {
+     "X": 45,
+     "Y": 528,
+     "Z": 28
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 6"
+    },
+    "LeftBottomCorner": {
+     "X": 90,
+     "Y": 528,
+     "Z": 28
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 7"
+    },
+    "LeftBottomCorner": {
+     "X": 135,
+     "Y": 528,
+     "Z": 28
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 8"
+    },
+    "LeftBottomCorner": {
+     "X": 180,
+     "Y": 528,
+     "Z": 28
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 9"
+    },
+    "LeftBottomCorner": {
+     "X": 0,
+     "Y": 528,
+     "Z": 56
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 10"
+    },
+    "LeftBottomCorner": {
+     "X": 45,
+     "Y": 528,
+     "Z": 56
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 3"
+    },
+    "LeftBottomCorner": {
+     "X": 90,
+     "Y": 528,
+     "Z": 56
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 5"
+    },
+    "LeftBottomCorner": {
+     "X": 135,
+     "Y": 528,
+     "Z": 56
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 6"
+    },
+    "LeftBottomCorner": {
+     "X": 180,
+     "Y": 528,
+     "Z": 56
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 7"
+    },
+    "LeftBottomCorner": {
+     "X": 0,
+     "Y": 528,
+     "Z": 84
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 2"
+    },
+    "LeftBottomCorner": {
+     "X": 45,
+     "Y": 528,
+     "Z": 84
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 5"
+    },
+    "LeftBottomCorner": {
+     "X": 90,
+     "Y": 528,
+     "Z": 84
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 7"
+    },
+    "LeftBottomCorner": {
+     "X": 135,
+     "Y": 528,
+     "Z": 84
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 4"
+    },
+    "LeftBottomCorner": {
+     "X": 180,
+     "Y": 528,
+     "Z": 84
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 5"
+    },
+    "LeftBottomCorner": {
+     "X": 0,
+     "Y": 528,
+     "Z": 112
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 6"
+    },
+    "LeftBottomCorner": {
+     "X": 45,
+     "Y": 528,
+     "Z": 112
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 8"
+    },
+    "LeftBottomCorner": {
+     "X": 90,
+     "Y": 528,
+     "Z": 112
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 9"
+    },
+    "LeftBottomCorner": {
+     "X": 135,
+     "Y": 528,
+     "Z": 112
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 10"
+    },
+    "LeftBottomCorner": {
+     "X": 180,
+     "Y": 528,
+     "Z": 112
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 4"
+    },
+    "LeftBottomCorner": {
+     "X": 0,
+     "Y": 528,
+     "Z": 140
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 5"
+    },
+    "LeftBottomCorner": {
+     "X": 45,
+     "Y": 528,
+     "Z": 140
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 6"
+    },
+    "LeftBottomCorner": {
+     "X": 90,
+     "Y": 528,
+     "Z": 140
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 2"
+    },
+    "LeftBottomCorner": {
+     "X": 135,
+     "Y": 528,
+     "Z": 140
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 4"
+    },
+    "LeftBottomCorner": {
+     "X": 180,
+     "Y": 528,
+     "Z": 140
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 6"
+    },
+    "LeftBottomCorner": {
+     "X": 0,
+     "Y": 528,
+     "Z": 168
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 8"
+    },
+    "LeftBottomCorner": {
+     "X": 45,
+     "Y": 528,
+     "Z": 168
+    }
+   },
+   {
+    "Item": {
+     "Width": 60,
+     "Length": 70,
+     "Height": 180,
+     "Weight": 60,
+     "Label": "Geladeira 2"
+    },
+    "LeftBottomCorner": {
+     "X": 0,
+     "Y": 305,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 60,
+     "Length": 70,
+     "Height": 180,
+     "Weight": 60,
+     "Label": "Geladeira 3"
+    },
+    "LeftBottomCorner": {
+     "X": 60,
+     "Y": 305,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 60,
+     "Length": 70,
+     "Height": 180,
+     "Weight": 60,
+     "Label": "Geladeira 5"
+    },
+    "LeftBottomCorner": {
+     "X": 120,
+     "Y": 305,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 60,
+     "Length": 70,
+     "Height": 180,
+     "Weight": 60,
+     "Label": "Geladeira 6"
+    },
+    "LeftBottomCorner": {
+     "X": 180,
+     "Y": 305,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 60,
+     "Length": 70,
+     "Height": 180,
+     "Weight": 60,
+     "Label": "Geladeira 7"
+    },
+    "LeftBottomCorner": {
+     "X": 0,
+     "Y": 375,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 4"
+    },
+    "LeftBottomCorner": {
+     "X": 60,
+     "Y": 375,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 3"
+    },
+    "LeftBottomCorner": {
+     "X": 105,
+     "Y": 375,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 5"
+    },
+    "LeftBottomCorner": {
+     "X": 150,
+     "Y": 375,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 6"
+    },
+    "LeftBottomCorner": {
+     "X": 195,
+     "Y": 375,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 8"
+    },
+    "LeftBottomCorner": {
+     "X": 0,
+     "Y": 305,
+     "Z": 180
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 9"
+    },
+    "LeftBottomCorner": {
+     "X": 45,
+     "Y": 305,
+     "Z": 180
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 10"
+    },
+    "LeftBottomCorner": {
+     "X": 90,
+     "Y": 305,
+     "Z": 180
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 1"
+    },
+    "LeftBottomCorner": {
+     "X": 135,
+     "Y": 305,
+     "Z": 180
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 2"
+    },
+    "LeftBottomCorner": {
+     "X": 180,
+     "Y": 305,
+     "Z": 180
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 3"
+    },
+    "LeftBottomCorner": {
+     "X": 0,
+     "Y": 375,
+     "Z": 180
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 4"
+    },
+    "LeftBottomCorner": {
+     "X": 45,
+     "Y": 375,
+     "Z": 180
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 5"
+    },
+    "LeftBottomCorner": {
+     "X": 90,
+     "Y": 375,
+     "Z": 180
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 9"
+    },
+    "LeftBottomCorner": {
+     "X": 135,
+     "Y": 375,
+     "Z": 180
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 10"
+    },
+    "LeftBottomCorner": {
+     "X": 180,
+     "Y": 375,
+     "Z": 180
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 1"
+    },
+    "LeftBottomCorner": {
+     "X": 60,
+     "Y": 375,
+     "Z": 28
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 2"
+    },
+    "LeftBottomCorner": {
+     "X": 105,
+     "Y": 375,
+     "Z": 28
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 3"
+    },
+    "LeftBottomCorner": {
+     "X": 150,
+     "Y": 375,
+     "Z": 28
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 4"
+    },
+    "LeftBottomCorner": {
+     "X": 195,
+     "Y": 375,
+     "Z": 28
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 5"
+    },
+    "LeftBottomCorner": {
+     "X": 60,
+     "Y": 375,
+     "Z": 56
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 6"
+    },
+    "LeftBottomCorner": {
+     "X": 105,
+     "Y": 375,
+     "Z": 56
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 7"
+    },
+    "LeftBottomCorner": {
+     "X": 150,
+     "Y": 375,
+     "Z": 56
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 8"
+    },
+    "LeftBottomCorner": {
+     "X": 195,
+     "Y": 375,
+     "Z": 56
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 9"
+    },
+    "LeftBottomCorner": {
+     "X": 60,
+     "Y": 375,
+     "Z": 84
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 10"
+    },
+    "LeftBottomCorner": {
+     "X": 105,
+     "Y": 375,
+     "Z": 84
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 1"
+    },
+    "LeftBottomCorner": {
+     "X": 150,
+     "Y": 375,
+     "Z": 84
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 2"
+    },
+    "LeftBottomCorner": {
+     "X": 195,
+     "Y": 375,
+     "Z": 84
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 3"
+    },
+    "LeftBottomCorner": {
+     "X": 60,
+     "Y": 375,
+     "Z": 112
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 4"
+    },
+    "LeftBottomCorner": {
+     "X": 105,
+     "Y": 375,
+     "Z": 112
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 6"
+    },
+    "LeftBottomCorner": {
+     "X": 150,
+     "Y": 375,
+     "Z": 112
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 7"
+    },
+    "LeftBottomCorner": {
+     "X": 195,
+     "Y": 375,
+     "Z": 112
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 8"
+    },
+    "LeftBottomCorner": {
+     "X": 60,
+     "Y": 375,
+     "Z": 140
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 9"
+    },
+    "LeftBottomCorner": {
+     "X": 105,
+     "Y": 375,
+     "Z": 140
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 10"
+    },
+    "LeftBottomCorner": {
+     "X": 150,
+     "Y": 375,
+     "Z": 140
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 1"
+    },
+    "LeftBottomCorner": {
+     "X": 195,
+     "Y": 375,
+     "Z": 140
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 2"
+    },
+    "LeftBottomCorner": {
+     "X": 60,
+     "Y": 415,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 3"
+    },
+    "LeftBottomCorner": {
+     "X": 105,
+     "Y": 415,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 4"
+    },
+    "LeftBottomCorner": {
+     "X": 150,
+     "Y": 415,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 5"
+    },
+    "LeftBottomCorner": {
+     "X": 195,
+     "Y": 415,
+     "Z": 0
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 6"
+    },
+    "LeftBottomCorner": {
+     "X": 60,
+     "Y": 415,
+     "Z": 28
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 7"
+    },
+    "LeftBottomCorner": {
+     "X": 105,
+     "Y": 415,
+     "Z": 28
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 8"
+    },
+    "LeftBottomCorner": {
+     "X": 150,
+     "Y": 415,
+     "Z": 28
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 9"
+    },
+    "LeftBottomCorner": {
+     "X": 195,
+     "Y": 415,
+     "Z": 28
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 10"
+    },
+    "LeftBottomCorner": {
+     "X": 60,
+     "Y": 415,
+     "Z": 56
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 1"
+    },
+    "LeftBottomCorner": {
+     "X": 105,
+     "Y": 415,
+     "Z": 56
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 2"
+    },
+    "LeftBottomCorner": {
+     "X": 150,
+     "Y": 415,
+     "Z": 56
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 3"
+    },
+    "LeftBottomCorner": {
+     "X": 195,
+     "Y": 415,
+     "Z": 56
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 3"
+    },
+    "LeftBottomCorner": {
+     "X": 60,
+     "Y": 415,
+     "Z": 84
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 3"
+    },
+    "LeftBottomCorner": {
+     "X": 105,
+     "Y": 415,
+     "Z": 84
+    }
+   },
+   {
+    "Item": {
+     "Width": 45,
+     "Length": 40,
+     "Height": 28,
+     "Weight": 15,
+     "Label": "Microondas 9"
+    },
+    "LeftBottomCorner": {
+     "X": 150,
+     "Y": 415,
+     "Z": 84
+    }
+   }
+  ],
+  "Unused": null
+ },
+ "Areas": [
+  {
+   "Width": 244,
+   "Length": 153,
+   "Height": 227,
+   "MaxWeight": 10000,
+   "LeftBottomCorner": {
+    "X": 0,
+    "Y": 0,
+    "Z": 0
+   },
+   "Sorted": {
+    "Volume": 0,
+    "Allocated": null,
+    "Unused": null
+   }
+  },
+  {
+   "Width": 244,
+   "Length": 153,
+   "Height": 227,
+   "MaxWeight": 10000,
+   "LeftBottomCorner": {
+    "X": 0,
+    "Y": 153,
+    "Z": 0
+   },
+   "Sorted": {
+    "Volume": 0,
+    "Allocated": null,
+    "Unused": null
+   }
+  },
+  {
+   "Width": 244,
+   "Length": 153,
+   "Height": 227,
+   "MaxWeight": 10000,
+   "LeftBottomCorner": {
+    "X": 0,
+    "Y": 305,
+    "Z": 0
+   },
+   "Sorted": {
+    "Volume": 0,
+    "Allocated": null,
+    "Unused": null
+   }
+  },
+  {
+   "Width": 244,
+   "Length": 153,
+   "Height": 227,
+   "MaxWeight": 10000,
+   "LeftBottomCorner": {
+    "X": 0,
+    "Y": 458,
+    "Z": 0
+   },
+   "Sorted": {
+    "Volume": 0,
+    "Allocated": null,
+    "Unused": null
+   }
+  },
+  {
+   "Width": 244,
+   "Length": 153,
+   "Height": 227,
+   "MaxWeight": 10000,
+   "LeftBottomCorner": {
+    "X": 0,
+    "Y": 610,
+    "Z": 0
+   },
+   "Sorted": {
+    "Volume": 0,
+    "Allocated": null,
+    "Unused": null
+   }
+  },
+  {
+   "Width": 244,
+   "Length": 153,
+   "Height": 227,
+   "MaxWeight": 10000,
+   "LeftBottomCorner": {
+    "X": 0,
+    "Y": 763,
+    "Z": 0
+   },
+   "Sorted": {
+    "Volume": 0,
+    "Allocated": null,
+    "Unused": null
+   }
+  },
+  {
+   "Width": 244,
+   "Length": 153,
+   "Height": 227,
+   "MaxWeight": 10000,
+   "LeftBottomCorner": {
+    "X": 0,
+    "Y": 915,
+    "Z": 0
+   },
+   "Sorted": {
+    "Volume": 0,
+    "Allocated": null,
+    "Unused": null
+   }
+  },
+  {
+   "Width": 244,
+   "Length": 153,
+   "Height": 227,
+   "MaxWeight": 10000,
+   "LeftBottomCorner": {
+    "X": 0,
+    "Y": 1068,
+    "Z": 0
+   },
+   "Sorted": {
+    "Volume": 0,
+    "Allocated": null,
+    "Unused": null
+   }
+  }
+ ]
+}

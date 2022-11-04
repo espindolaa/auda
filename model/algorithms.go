@@ -1,6 +1,10 @@
 package model
 
-import "sync"
+import (
+	"math"
+	"sort"
+	"sync"
+)
 
 type BreakingStrategy interface {
 	Break(full Container) []Container
@@ -11,13 +15,13 @@ type ByColumn struct {
 }
 
 func (c *ByColumn) Break(full Container) []Container {
-	half := full.Length / 2
+	half := math.Round(full.Length / 2)
 	f := full
 	f.Length = half
 
 	s := full
 	s.Length = half
-	s.LeftBottomPoint = Point{X: full.LeftBottomPoint.X, Y: full.LeftBottomPoint.Y + half, Z: full.LeftBottomPoint.Z}
+	s.LeftBottomCorner = Point{X: full.LeftBottomCorner.X, Y: full.LeftBottomCorner.Y + half, Z: full.LeftBottomCorner.Z}
 
 	return []Container{f, s}
 }
@@ -27,12 +31,20 @@ type Pool struct {
 	items []Item // this is a sorted list of item by voulme, desc
 }
 
-func NewPool(items []Item) *Pool {
-	// todo: sort items (merge sort)
-	return &Pool{items: items}
+func NewPool(i []Item) *Pool {
+	sort.Slice(i, func(first, second int) bool {
+		return i[first].Volume() > i[second].Volume()
+	})
+	p := &Pool{items: i}
+	p.mu.Lock()
+	return p
 }
 
-func (p *Pool) SafeTakeItem(volume int) (bool, Item) {
+func (p *Pool) AllowTake() {
+	p.mu.Unlock()
+}
+
+func (p *Pool) SafeTakeItem(volume float64) (bool, Item) {
 	p.mu.Lock()
 	defer p.mu.Unlock()
 

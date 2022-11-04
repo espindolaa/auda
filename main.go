@@ -1,25 +1,24 @@
 package auda
 
 import (
+	"fmt"
 	"tcc/model"
 )
 
-func isValidSolution(containers []model.Container) bool {
+func formFinalSolution(solution []model.Utilization) model.Utilization {
 	fullSpace := model.Utilization{}
-	for _, c := range containers {
-		if !fullSpace.Append(c.Sorted) {
-			return false
-		}
+	fmt.Printf("Containers usados: %d", len(solution))
+	for _, u := range solution {
+		fullSpace.Append(u)
 	}
 
-	return true
+	return fullSpace
 }
 
 func waitForCompletion(ch chan model.Utilization, numberOfContainers int) []model.Utilization {
 	utilizations := []model.Utilization{}
 
-	for {
-		v := <-ch
+	for v := range ch {
 		utilizations = append(utilizations, v)
 
 		if len(utilizations) == numberOfContainers {
@@ -31,10 +30,10 @@ func waitForCompletion(ch chan model.Utilization, numberOfContainers int) []mode
 	return utilizations
 }
 
-func core(container model.Container, items []model.Item) (bool, []model.Utilization) {
+func core(container model.Container, items []model.Item) model.Utilization {
 	pool := model.NewPool(items)
 
-	containers := container.BreakSpace(container) // serial
+	containers := model.BreakSpace([]model.Container{container}, len(items))
 
 	channel := make(chan model.Utilization)
 
@@ -42,11 +41,12 @@ func core(container model.Container, items []model.Item) (bool, []model.Utilizat
 		go c.Sort(pool, channel)
 	}
 
-	solution := waitForCompletion(channel, len(containers))
+	pool.AllowTake()
 
-	if isValidSolution(containers) {
-		return false, nil
-	}
+	solutions := waitForCompletion(channel, len(containers))
+	result := formFinalSolution(solutions)
 
-	return true, solution
+	generateJson(result, containers)
+
+	return result
 }
