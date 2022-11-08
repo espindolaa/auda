@@ -1,13 +1,11 @@
 package auda
 
 import (
-	"fmt"
 	"tcc/model"
 )
 
 func formFinalSolution(solution []model.Utilization) model.Utilization {
 	fullSpace := model.Utilization{}
-	fmt.Printf("Containers usados: %d", len(solution))
 	for _, u := range solution {
 		fullSpace.Append(u)
 	}
@@ -46,7 +44,7 @@ func core(container model.Container, items []model.Item) model.Utilization {
 	solutions := waitForCompletion(channel, len(containers))
 	result := formFinalSolution(solutions)
 
-	generateJson(result, containers)
+	//generateJson(result, containers)
 
 	return result
 }

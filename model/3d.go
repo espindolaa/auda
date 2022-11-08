@@ -52,7 +52,7 @@ func (c Container) Sort(pool *Pool, channel chan Utilization) {
 }
 
 func BreakSpace(spaces []Container, numberOfItems int) []Container {
-	if numberOfItems > 25 { // magic number
+	if numberOfItems > 200 { // magic number
 		// call another break
 		numberOfItems = numberOfItems / 2
 		brokenSpaces := []Container{}
