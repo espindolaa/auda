@@ -1,5 +1,7 @@
 package model
 
+import "fmt"
+
 type Point struct {
 	X float64
 	Y float64
@@ -52,7 +54,7 @@ func (c Container) Sort(pool *Pool, channel chan Utilization) {
 }
 
 func BreakSpace(spaces []Container, numberOfItems int) []Container {
-	if numberOfItems > 150 { // magic number
+	if numberOfItems > 200 { // magic number
 		// call another break
 		numberOfItems = numberOfItems / 2
 		brokenSpaces := []Container{}
@@ -65,6 +67,7 @@ func BreakSpace(spaces []Container, numberOfItems int) []Container {
 		return BreakSpace(brokenSpaces, numberOfItems)
 	}
 
+	fmt.Println(len(spaces))
 	return spaces
 }
 

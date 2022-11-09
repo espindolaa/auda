@@ -9,9 +9,13 @@ import (
 
 // run with go test -bench=. -benchtime=1x
 
+const (
+	testFile = "tests/thpack1.txt"
+)
+
 func BenchmarkHeuristic(b *testing.B) {
 	b.StopTimer()
-	tests := ParseTestFile("tests/thpack1.txt")
+	tests := ParseTestFile(testFile)
 
 	fmt.Println("Heuristic results")
 
@@ -31,7 +35,7 @@ func BenchmarkHeuristic(b *testing.B) {
 
 func BenchmarkSimple(b *testing.B) {
 	b.StopTimer()
-	tests := ParseTestFile("tests/thpack1.txt")
+	tests := ParseTestFile(testFile)
 
 	type SimpleTest struct {
 		ID        string
