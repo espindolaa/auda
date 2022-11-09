@@ -39,10 +39,14 @@ func ParseTestFile(name string) []TestInstance {
 		lines = append(lines, scanner.Text())
 	}
 
-	for {
-		i := 0
+	i := 0
+	numberOfProblems, _ := strconv.Atoi(lines[i])
+	i++
+
+	for p := 0; p < numberOfProblems; p++ {
 		test := TestInstance{}
-		test.ID = lines[i]
+		id := strings.Split(lines[i], " ")
+		test.ID = id[0]
 		i++
 		c := strings.Split(lines[i], " ")
 		containerL, _ := strconv.ParseFloat(c[1], 64)
@@ -64,10 +68,6 @@ func ParseTestFile(name string) []TestInstance {
 			i++
 		}
 		tests = append(tests, test)
-		lines = lines[i:]
-		if len(lines) == 0 {
-			break
-		}
 	}
 
 	return tests

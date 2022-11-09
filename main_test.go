@@ -11,7 +11,7 @@ import (
 
 func BenchmarkHeuristic(b *testing.B) {
 	b.StopTimer()
-	tests := ParseTestFile("test.txt")
+	tests := ParseTestFile("tests/thpack1.txt")
 
 	fmt.Println("Heuristic results")
 
@@ -26,11 +26,12 @@ func BenchmarkHeuristic(b *testing.B) {
 		fmt.Printf("Number of items: %d \n", len(result.Allocated))
 		fmt.Println()
 	}
+	b.Name()
 }
 
 func BenchmarkSimple(b *testing.B) {
 	b.StopTimer()
-	tests := ParseTestFile("test.txt")
+	tests := ParseTestFile("tests/thpack1.txt")
 
 	type SimpleTest struct {
 		ID        string
