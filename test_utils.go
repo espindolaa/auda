@@ -52,7 +52,7 @@ func ParseTestFile(name string) []TestInstance {
 		containerL, _ := strconv.ParseFloat(c[1], 64)
 		containerW, _ := strconv.ParseFloat(c[0], 64)
 		containerH, _ := strconv.ParseFloat(c[2], 64)
-		test.Container = model.NewContainer(model.NewBox(containerL, containerW, containerH), 10000, model.Point{X: 0, Y: 0, Z: 0}, model.B3PDAdapter{})
+		test.Container = model.NewContainer(model.NewBox(containerL, containerW, containerH), 10000, model.Point{X: 0, Y: 0, Z: 0}, model.BP3DAdapter{})
 		i++
 		n, _ := strconv.Atoi(lines[i])
 		i++

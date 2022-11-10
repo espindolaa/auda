@@ -2,6 +2,8 @@ package auda
 
 import (
 	"fmt"
+	"syscall"
+	"tcc/model"
 	"testing"
 
 	"github.com/gedex/bp3d"
@@ -13,6 +15,12 @@ const (
 	testFile = "tests/thpack1.txt"
 )
 
+func GetCPU() int64 {
+	usage := new(syscall.Rusage)
+	syscall.Getrusage(syscall.RUSAGE_SELF, usage)
+	return usage.Utime.Nano() + usage.Stime.Nano()
+}
+
 func BenchmarkHeuristic(b *testing.B) {
 	b.StopTimer()
 	tests := ParseTestFile(testFile)
@@ -23,14 +31,15 @@ func BenchmarkHeuristic(b *testing.B) {
 	b.StartTimer()
 
 	for _, t := range tests {
-		result := core(t.Container, t.Items)
+		result := heuristic(t.Container, t.Items)
 
 		fmt.Printf("Test ID: %s \n", t.ID)
 		fmt.Printf("Volume occupied: %f \n", result.Volume)
 		fmt.Printf("Number of items: %d \n", len(result.Allocated))
 		fmt.Println()
 	}
-	b.Name()
+	b.StopTimer()
+	fmt.Printf("CPU Time: %d \n", GetCPU())
 }
 
 func BenchmarkSimple(b *testing.B) {
@@ -47,7 +56,7 @@ func BenchmarkSimple(b *testing.B) {
 	for _, t := range tests {
 		items := []*bp3d.Item{}
 		for _, i := range t.Items {
-			items = append(items, bp3d.NewItem(i.Label, i.Width, i.Height, i.Length, i.Weight))
+			items = append(items, model.FromItem(i))
 		}
 
 		preparedTests = append(preparedTests, SimpleTest{
@@ -63,25 +72,20 @@ func BenchmarkSimple(b *testing.B) {
 	b.StartTimer()
 
 	for _, t := range preparedTests {
-		p := bp3d.NewPacker()
-
-		p.AddBin(t.Container)
-
-		for _, i := range t.Items {
-			p.AddItem(i)
-		}
-
-		p.Pack()
+		bin := simple(t.Container, t.Items)
 
 		volume := 0.0
 
-		for _, i := range p.Bins[0].Items {
+		for _, i := range bin.Items {
 			volume += i.Depth * i.Height * i.Width
 		}
 
 		fmt.Printf("Test ID: %s \n", t.ID)
 		fmt.Printf("Volume occupied: %f \n", volume)
-		fmt.Printf("Number of items: %d \n", len(p.Bins[0].Items))
+		fmt.Printf("Number of items: %d \n", len(bin.Items))
 		fmt.Println()
 	}
+
+	b.StopTimer()
+	fmt.Printf("CPU Time: %d \n", GetCPU())
 }

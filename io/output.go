@@ -1,4 +1,4 @@
-package auda
+package io
 
 import (
 	"encoding/json"
@@ -11,10 +11,10 @@ type Visual struct {
 	Areas []model.Container
 }
 
-func generateJson(solution model.Utilization, containers []model.Container) {
+func GenerateJson(solution model.Utilization, containers []model.Container, filename string) {
 	j := Visual{Boxes: solution, Areas: containers}
 
 	file, _ := json.MarshalIndent(j, "", " ")
 
-	_ = ioutil.WriteFile("result.json", file, 0644)
+	_ = ioutil.WriteFile(filename, file, 0644)
 }
