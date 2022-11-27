@@ -56,15 +56,14 @@ func ParseTestFile(name string) []TestInstance {
 		i++
 		n, _ := strconv.Atoi(lines[i])
 		i++
-		items := []model.Item{}
 		for j := 0; j < n; j++ {
 			l := strings.Split(lines[i], " ")
 			itemL, _ := strconv.ParseFloat(l[3], 64)
 			itemW, _ := strconv.ParseFloat(l[1], 64)
 			itemH, _ := strconv.ParseFloat(l[5], 64)
 			copies, _ := strconv.Atoi(l[7])
-			items = append(items, GetCopiesOfItems(copies, strconv.Itoa(n), itemL, itemW, itemH, 0)...)
-			test.Items = append(test.Items, items...)
+			copied := GetCopiesOfItems(copies, strconv.Itoa(n), itemL, itemW, itemH, 0)
+			test.Items = append(test.Items, copied...)
 			i++
 		}
 		tests = append(tests, test)

@@ -46,8 +46,6 @@ func heuristic(container model.Container, items []model.Item) model.Utilization 
 	solutions := waitForCompletion(channel, len(containers))
 	result := formFinalSolution(solutions)
 
-	// io.GenerateJson(result, containers, "heuristic.json")
-
 	return result
 }
 
@@ -61,11 +59,6 @@ func simple(container *bp3d.Bin, items []*bp3d.Item) *bp3d.Bin {
 	}
 
 	p.Pack()
-
-	// result := model.ToUtilization(p.Bins[0], p.UnfitItems)
-	// io.GenerateJson(result, []model.Container{
-	// 	model.NewContainer(model.NewBox(container.Width, container.Depth, container.Height), 10000, model.Point{X: 0, Y: 0, Z: 0}, nil),
-	// }, "simple.json")
 
 	return p.Bins[0]
 }

@@ -1,8 +1,6 @@
 package model
 
 import (
-	"log"
-
 	"github.com/gedex/bp3d"
 )
 
@@ -21,21 +19,11 @@ func ToItem(i *bp3d.Item) Item {
 	return NewItem(i.Name, i.Width, i.Depth, i.Height, i.Weight)
 }
 
-func ToUtilization(bin *bp3d.Bin, unfit []*bp3d.Item) Utilization {
-	var result Utilization
-
-	for _, i := range bin.Items {
-		item := NewItem(i.Name, i.Width, i.Depth, i.Height, i.Weight)
-		containerPoint := Point{0, 0, 0}
-		position := NewPosition(item, Point{i.Position[0] + containerPoint.X, i.Position[2] + containerPoint.Y, i.Position[1] + containerPoint.Z})
-		result.Add(position)
-	}
-
-	for _, i := range unfit {
-		result.AddUnused(NewItem(i.Name, i.Width, i.Depth, i.Height, i.Weight))
-	}
-
-	return result
+func ToPosition(i *bp3d.Item, bottomLeft Point) Position {
+	dimensions := i.GetDimension()
+	item := NewItem(i.Name, dimensions[0], dimensions[2], dimensions[1], i.Weight)
+	position := NewPosition(item, Point{i.Position[0] + bottomLeft.X, i.Position[2] + bottomLeft.Y, i.Position[1] + bottomLeft.Z})
+	return position
 }
 
 func (b3pd BP3DAdapter) Pack(c Container) Utilization {
@@ -50,17 +38,12 @@ func (b3pd BP3DAdapter) Pack(c Container) Utilization {
 		packer.AddItem(FromItem(item))
 	}
 
-	if err := packer.Pack(); err != nil { // todo: handle error
-		log.Fatal(err)
-	}
+	packer.Pack()
 
 	var result Utilization
 
 	for _, i := range packer.Bins[0].Items {
-		item := m[i.Name]
-		containerPoint := c.LeftBottomCorner
-		position := NewPosition(item, Point{i.Position[0] + containerPoint.X, i.Position[2] + containerPoint.Y, i.Position[1] + containerPoint.Z})
-		result.Add(position)
+		result.Add(ToPosition(i, c.LeftBottomCorner))
 	}
 
 	for _, i := range packer.UnfitItems {

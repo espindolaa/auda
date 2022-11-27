@@ -2,24 +2,17 @@ package auda
 
 import (
 	"fmt"
-	"syscall"
 	"tcc/model"
 	"testing"
 
 	"github.com/gedex/bp3d"
 )
 
-// run with go test -bench=. -benchtime=1x
+// go test -run=. -bench=. -benchtime=1ns
 
 const (
-	testFile = "tests/thpack1.txt"
+	testFile = "tests/thpack2.txt"
 )
-
-func GetCPU() int64 {
-	usage := new(syscall.Rusage)
-	syscall.Getrusage(syscall.RUSAGE_SELF, usage)
-	return usage.Utime.Nano() + usage.Stime.Nano()
-}
 
 func BenchmarkHeuristic(b *testing.B) {
 	b.StopTimer()
@@ -30,16 +23,23 @@ func BenchmarkHeuristic(b *testing.B) {
 	b.SetParallelism(1)
 	b.StartTimer()
 
+	totalVolume := 0
+	totalItems := 0
+
 	for _, t := range tests {
 		result := heuristic(t.Container, t.Items)
 
 		fmt.Printf("Test ID: %s \n", t.ID)
-		fmt.Printf("Volume occupied: %f \n", result.Volume)
-		fmt.Printf("Number of items: %d \n", len(result.Allocated))
-		fmt.Println()
+		fmt.Printf("%f \n", result.Volume)
+		fmt.Printf("%d \n", len(result.Allocated))
+
+		totalVolume += int(result.Volume)
+		totalItems += len(result.Allocated)
 	}
 	b.StopTimer()
-	fmt.Printf("CPU Time: %d \n", GetCPU())
+
+	fmt.Printf("Total volume: %d \n", totalVolume)
+	fmt.Printf("Total items: %d \n", totalItems)
 }
 
 func BenchmarkSimple(b *testing.B) {
@@ -71,6 +71,9 @@ func BenchmarkSimple(b *testing.B) {
 	b.SetParallelism(1)
 	b.StartTimer()
 
+	totalVolume := 0
+	totalItems := 0
+
 	for _, t := range preparedTests {
 		bin := simple(t.Container, t.Items)
 
@@ -81,11 +84,14 @@ func BenchmarkSimple(b *testing.B) {
 		}
 
 		fmt.Printf("Test ID: %s \n", t.ID)
-		fmt.Printf("Volume occupied: %f \n", volume)
-		fmt.Printf("Number of items: %d \n", len(bin.Items))
-		fmt.Println()
+		fmt.Printf("%f \n", volume)
+		fmt.Printf("%d \n", len(bin.Items))
+
+		totalVolume += int(volume)
+		totalItems += len(bin.Items)
 	}
 
 	b.StopTimer()
-	fmt.Printf("CPU Time: %d \n", GetCPU())
+	fmt.Printf("Total volume: %d \n", totalVolume)
+	fmt.Printf("Total items: %d \n", totalItems)
 }
