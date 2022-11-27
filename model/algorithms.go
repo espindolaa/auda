@@ -28,7 +28,7 @@ func (c *ByColumn) Break(full Container) []Container {
 
 type Pool struct {
 	mu    sync.Mutex
-	items []Item // this is a sorted list of item by voulme, desc
+	items []Item // this is a sorted list of item by volume, desc
 }
 
 func NewPool(i []Item) *Pool {
